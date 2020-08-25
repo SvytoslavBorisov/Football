@@ -10,46 +10,157 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow2(object):
-    def setupUi(self, MainWindow2):
-        MainWindow2.setObjectName("MainWindow2")
-        MainWindow2.resize(507, 365)
-        self.centralwidget = QtWidgets.QWidget(MainWindow2)
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(587, 481)
+        MainWindow.setStyleSheet("")
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.layoutWidget.setGeometry(QtCore.QRect(110, 50, 271, 211))
-        self.layoutWidget.setObjectName("layoutWidget")
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.layoutWidget)
-        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.label = QtWidgets.QLabel(self.layoutWidget)
-        self.label.setAlignment(QtCore.Qt.AlignCenter)
-        self.label.setObjectName("label")
-        self.verticalLayout_2.addWidget(self.label)
-        self.verticalLayout = QtWidgets.QVBoxLayout()
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.pushButton = QtWidgets.QPushButton(self.layoutWidget)
-        self.pushButton.setObjectName("pushButton")
-        self.verticalLayout.addWidget(self.pushButton)
-        self.pushButton_2 = QtWidgets.QPushButton(self.layoutWidget)
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.verticalLayout.addWidget(self.pushButton_2)
-        self.verticalLayout_2.addLayout(self.verticalLayout)
-        MainWindow2.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow2)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 507, 21))
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(30, -60, 531, 481))
+        self.frame.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.bSettings = QtWidgets.QPushButton(self.frame)
+        self.bSettings.setGeometry(QtCore.QRect(10, 160, 511, 81))
+        font = QtGui.QFont()
+        font.setFamily("Segoe Print")
+        font.setPointSize(36)
+        font.setBold(True)
+        font.setWeight(75)
+        self.bSettings.setFont(font)
+        self.bSettings.setStyleSheet("QPushButton\n"
+"{\n"
+"background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(100, 100, 100, 255));\n"
+"color:white;\n"
+"border-style: outset;\n"
+"border-width: 1px;\n"
+"border-radius: 10px;\n"
+"border-color: beige;\n"
+"min-width: 10em;\n"
+"padding: 6px;\n"
+"}\n"
+"QPushButton:hover\n"
+"{\n"
+"background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(100, 100, 100, 255), stop:1 rgba(100, 100, 100, 255));\n"
+"border-style:inset;\n"
+"border-width: 1px;\n"
+"border-radius: 10px;\n"
+"border-color: beige;\n"
+"min-width: 10em;\n"
+"padding: 6px;\n"
+"}\n"
+"QPushButton:pressed\n"
+"{\n"
+"background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(100, 100, 100, 255), stop:1 rgba(180, 180, 180, 255));\n"
+"border-style:inset;\n"
+"border-width: 1px;\n"
+"border-radius: 10px;\n"
+"border-color: beige;\n"
+"min-width: 10em;\n"
+"padding: 6px;\n"
+"}")
+        self.bSettings.setFlat(False)
+        self.bSettings.setObjectName("bSettings")
+        self.bExit = QtWidgets.QPushButton(self.frame)
+        self.bExit.setGeometry(QtCore.QRect(10, 240, 511, 81))
+        font = QtGui.QFont()
+        font.setFamily("Segoe Print")
+        font.setPointSize(36)
+        font.setBold(True)
+        font.setWeight(75)
+        self.bExit.setFont(font)
+        self.bExit.setStyleSheet("QPushButton\n"
+"{\n"
+"background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(100, 100, 100, 255));\n"
+"color:white;\n"
+"border-style: outset;\n"
+"border-width: 1px;\n"
+"border-radius: 10px;\n"
+"border-color: beige;\n"
+"min-width: 10em;\n"
+"padding: 6px;\n"
+"}\n"
+"QPushButton:hover\n"
+"{\n"
+"background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(100, 100, 100, 255), stop:1 rgba(100, 100, 100, 255));\n"
+"border-style:inset;\n"
+"border-width: 1px;\n"
+"border-radius: 10px;\n"
+"border-color: beige;\n"
+"min-width: 10em;\n"
+"padding: 6px;\n"
+"}\n"
+"QPushButton:pressed\n"
+"{\n"
+"background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(100, 100, 100, 255), stop:1 rgba(180, 180, 180, 255));\n"
+"border-style:inset;\n"
+"border-width: 1px;\n"
+"border-radius: 10px;\n"
+"border-color: beige;\n"
+"min-width: 10em;\n"
+"padding: 6px;\n"
+"}")
+        self.bExit.setFlat(False)
+        self.bExit.setObjectName("bExit")
+        self.bNewGame = QtWidgets.QPushButton(self.frame)
+        self.bNewGame.setGeometry(QtCore.QRect(10, 80, 511, 81))
+        font = QtGui.QFont()
+        font.setFamily("Segoe Print")
+        font.setPointSize(36)
+        font.setBold(True)
+        font.setWeight(75)
+        self.bNewGame.setFont(font)
+        self.bNewGame.setStyleSheet("QPushButton\n"
+"{\n"
+"background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(100, 100, 100, 255));\n"
+"color:white;\n"
+"border-style: outset;\n"
+"border-width: 1px;\n"
+"border-radius: 10px;\n"
+"border-color: beige;\n"
+"min-width: 10em;\n"
+"padding: 6px;\n"
+"}\n"
+"QPushButton:hover\n"
+"{\n"
+"background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(100, 100, 100, 255), stop:1 rgba(100, 100, 100, 255));\n"
+"border-style:inset;\n"
+"border-width: 1px;\n"
+"border-radius: 10px;\n"
+"border-color: beige;\n"
+"min-width: 10em;\n"
+"padding: 6px;\n"
+"}\n"
+"QPushButton:pressed\n"
+"{\n"
+"background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(100, 100, 100, 255), stop:1 rgba(180, 180, 180, 255));\n"
+"border-style:inset;\n"
+"border-width: 1px;\n"
+"border-radius: 10px;\n"
+"border-color: beige;\n"
+"min-width: 10em;\n"
+"padding: 6px;\n"
+"}")
+        self.bNewGame.setDefault(False)
+        self.bNewGame.setFlat(False)
+        self.bNewGame.setObjectName("bNewGame")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 587, 21))
         self.menubar.setObjectName("menubar")
-        MainWindow2.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow2)
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
-        MainWindow2.setStatusBar(self.statusbar)
+        MainWindow.setStatusBar(self.statusbar)
 
-        self.retranslateUi(MainWindow2)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow2)
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-    def retranslateUi(self, MainWindow2):
+    def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow2.setWindowTitle(_translate("MainWindow2", "MainWindow"))
-        self.label.setText(_translate("MainWindow2", "Меню"))
-        self.pushButton.setText(_translate("MainWindow2", "PushButton"))
-        self.pushButton_2.setText(_translate("MainWindow2", "PushButton"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.bSettings.setText(_translate("MainWindow", "База данных"))
+        self.bExit.setText(_translate("MainWindow", "Выйти из игры"))
+        self.bNewGame.setText(_translate("MainWindow", "Новая игра"))

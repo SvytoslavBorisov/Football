@@ -1,58 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow2</class>
- <widget class="QMainWindow" name="MainWindow2">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>507</width>
-    <height>365</height>
+    <width>587</width>
+    <height>481</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>50</y>
-      <width>271</width>
-      <height>211</height>
+      <x>30</x>
+      <y>-60</y>
+      <width>531</width>
+      <height>481</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Меню</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QPushButton" name="pushButton">
-         <property name="text">
-          <string>PushButton</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="text">
-          <string>PushButton</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="bSettings">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>511</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe Print</family>
+       <pointsize>36</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(100, 100, 100, 255));
+color:white;
+border-style: outset;
+border-width: 1px;
+border-radius: 10px;
+border-color: beige;
+min-width: 10em;
+padding: 6px;
+}
+QPushButton:hover
+{
+background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(100, 100, 100, 255), stop:1 rgba(100, 100, 100, 255));
+border-style:inset;
+border-width: 1px;
+border-radius: 10px;
+border-color: beige;
+min-width: 10em;
+padding: 6px;
+}
+QPushButton:pressed
+{
+background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(100, 100, 100, 255), stop:1 rgba(180, 180, 180, 255));
+border-style:inset;
+border-width: 1px;
+border-radius: 10px;
+border-color: beige;
+min-width: 10em;
+padding: 6px;
+}</string>
+     </property>
+     <property name="text">
+      <string>База данных</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bExit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>511</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe Print</family>
+       <pointsize>36</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(100, 100, 100, 255));
+color:white;
+border-style: outset;
+border-width: 1px;
+border-radius: 10px;
+border-color: beige;
+min-width: 10em;
+padding: 6px;
+}
+QPushButton:hover
+{
+background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(100, 100, 100, 255), stop:1 rgba(100, 100, 100, 255));
+border-style:inset;
+border-width: 1px;
+border-radius: 10px;
+border-color: beige;
+min-width: 10em;
+padding: 6px;
+}
+QPushButton:pressed
+{
+background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(100, 100, 100, 255), stop:1 rgba(180, 180, 180, 255));
+border-style:inset;
+border-width: 1px;
+border-radius: 10px;
+border-color: beige;
+min-width: 10em;
+padding: 6px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Выйти из игры</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bNewGame">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>511</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe Print</family>
+       <pointsize>36</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(180, 180, 180, 255), stop:1 rgba(100, 100, 100, 255));
+color:white;
+border-style: outset;
+border-width: 1px;
+border-radius: 10px;
+border-color: beige;
+min-width: 10em;
+padding: 6px;
+}
+QPushButton:hover
+{
+background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(100, 100, 100, 255), stop:1 rgba(100, 100, 100, 255));
+border-style:inset;
+border-width: 1px;
+border-radius: 10px;
+border-color: beige;
+min-width: 10em;
+padding: 6px;
+}
+QPushButton:pressed
+{
+background-color:qlineargradient(spread:reflect, x1:0.493955, y1:0.051, x2:0.5, y2:0.528318, stop:0 rgba(100, 100, 100, 255), stop:1 rgba(180, 180, 180, 255));
+border-style:inset;
+border-width: 1px;
+border-radius: 10px;
+border-color: beige;
+min-width: 10em;
+padding: 6px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Новая игра</string>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -60,7 +213,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>507</width>
+     <width>587</width>
      <height>21</height>
     </rect>
    </property>

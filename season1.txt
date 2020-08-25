@@ -1,16 +1,16 @@
-Barcelona 61
-Real Madrid 56
-Atletico Madrid 48
-Valencia 48
-Sevilla 48
-Deportivo 48
-Betis 40
-Celta 39
-Espanyol 37
-Girona 35
-Malaga 33
-Leganes 31
-Las Palmas 31
-Levante 27
-Eibar 24
-Getafe 22
+Atletico Madrid 64
+Real Madrid 61
+Valencia 57
+Sevilla 51
+Barcelona 50
+Celta 41
+Espanyol 40
+Las Palmas 40
+Levante 39
+Betis 37
+Girona 36
+Eibar 32
+Deportivo 28
+Malaga 25
+Leganes 24
+Getafe 24

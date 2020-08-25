@@ -17,7 +17,6 @@ class Footballer:
                  longShots, horsebackRiding, penalty, fieldVision, awnings, standards, shortPass,
                  longPass, ballSpin, dexterity, balance, reaction, ballControl, dribbling, selfControl, intercepts,
                  headGame, custody, ballSelection, tackles, jumpingAbility, endurance, force, aggressiveness, height - 100, 0]
-
         # Все скиллы игроков(высчитываются по тайной формуле)
         self.skillSave = self.countSkillPosition([0, 1, 3], [5], [2, 4, 29], [30], 21, 0) if self.skillsAll[6] == 0 else 1
         self.skillSelection = self.countSkillPosition([23, 20], [22, 24], [14, 27, 28], [15], 21, 0) if self.skillsAll[6] != 0 else self.skillSave
@@ -34,7 +33,6 @@ class Footballer:
                        self.countSkillPosition([17, 8, 11], [12, 0, 14, 5], [3, 18, 26], [20, 2], 32, 0) if self.skillsAll[6] != 0 else 1,  # skillAttackMid
                        self.countSkillPosition([0, 1, 9], [17, 14, 3], [5, 8, 11, 12, 18], [19, 20, 26, 16], 33, +self.workingFoot) if self.skillsAll[6] != 0 else 1,  #skillRightWinger
                        self.countSkillPosition([3, 14], [11, 4], [1, 16, 2, 16, 8, 19, 0, 13], [6, 21, 18, 25, 5, 15], 34, 0) if self.skillsAll[6] != 0 else 1]        #skillStriker
-
         # Характеристики для каждого сезона
         self.active = False
         self.goals = 0
@@ -48,10 +46,10 @@ class Footballer:
 
     # Сокращение строк для высчитывания характеристик игроков
     def countSkillPosition(self, for4, for3, for2, for1, count, difference):
-        temp = (4 * sum([self.skillsAll[i] for i in for4]) +
-               3 * sum([self.skillsAll[i] for i in for3]) +
-               2 * sum([self.skillsAll[i] for i in for2]) +
-               sum([self.skillsAll[i] for i in for1])) / count
+        temp = (4 * sum([int(self.skillsAll[i]) for i in for4]) +
+               3 * sum([int(self.skillsAll[i]) for i in for3]) +
+               2 * sum([int(self.skillsAll[i]) for i in for2]) +
+               sum([int(self.skillsAll[i]) for i in for1])) / count
         return temp + difference
 
     # Восставновление стутуса ACTIVE = False
@@ -59,8 +57,8 @@ class Footballer:
         self.active = False
 
     def zeroingPhysic(self):
-        if self.physic + 300 / self.age >= 100:
+        if self.physic + 250 / self.age >= 100:
             self.physic = 100
         else:
-            self.physic += 300 / self.age
+            self.physic += 250 / self.age
 
